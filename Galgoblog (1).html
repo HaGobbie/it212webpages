@@ -1,0 +1,171 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Bass Guitar — Blog Post</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <style>
+    :root{
+      --bg: #efeeea;
+      --text: #222;
+      --muted: #555;
+      --accent: #b33;
+      --maxw: 1200px;
+    }
+
+    body{
+      margin:0;
+      font-family: "Poppins", sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height:1.5;
+    }
+
+    .page{
+      max-width: var(--maxw);
+      margin: 40px auto;
+      padding: 30px;
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    }
+
+    .header{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: var(--muted);
+      font-size: 0.9rem;
+      margin-bottom: 20px;
+    }
+
+    .divider{
+      flex:1;
+      height:1px;
+      background: #000;
+      margin: 0 10px;
+    }
+
+    .top{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 30px;
+      align-items: center;
+      margin-bottom: 30px;
+    }
+
+    .top img{
+      width: 100%;
+      border-radius: 30px;
+      object-fit: cover;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+
+    h1{
+      font-family: "Playfair Display", serif;
+      font-size: 4rem;
+      letter-spacing: 3px;
+      text-align: center;
+      margin: 0;
+    }
+
+    article{
+      font-size: 1rem;
+      color: var(--text);
+    }
+
+    article h2{
+      font-size: 1.3rem;
+      margin-top: 20px;
+      color: var(--accent);
+    }
+
+    .content{
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      gap: 30px;
+      margin-top: 20px;
+    }
+
+    .content img{
+      width: 100%;
+      background: #f9f9f9;
+      border-radius: 10px;
+      padding: 10px;
+      box-shadow: 0 5px 10px rgba(0,0,0,0.05);
+    }
+
+    footer{
+      text-align: center;
+      color: var(--muted);
+      font-size: 0.9rem;
+      margin-top: 30px;
+    }
+
+    @media (max-width:768px){
+      .top, .content{
+        grid-template-columns: 1fr;
+      }
+      h1{ font-size: 2.5rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="page">
+    <div class="header">
+      <span>NEW POST</span>
+      <div class="divider"></div>
+      <span>#001</span>
+    </div>
+
+    <div class="top">
+      <img src="https://uploads.onecompiler.io/442ue6mpy/443cqjqtd/1000037438.png" alt="Playing Bass Guitar">
+      <h1>BASS GUITAR</h1>
+    </div>
+
+    <article>
+      <h2>🎸 The Underrated Hero: Why the Bass Guitar Matters</h2>
+      <p>The bass guitar. It's often the quiet powerhouse, the member of the band you might not immediately hear, but would instantly miss. While lead guitarists grab the spotlight and drummers provide the explosive rhythm, the bassist is the bridge—the vital link that locks the harmony and rhythm together, giving the music its foundation and unforgettable groove.</p>
+
+      <h2>What Makes the Bass, the Bass?</h2>
+      <p>At first glance, the electric bass guitar looks like its six-stringed cousin, but it's fundamentally different.</p>
+
+      <h2>Tuning and Pitch</h2>
+      <p>Most electric basses have four strings, tuned to E-A-D-G (from thickest to thinnest). This lower frequency gives music its depth and warmth.</p>
+
+      <h2>Role in the Band</h2>
+      <p>The bass is the instrument of rhythm and harmony. The bassist typically works in close synchronization with the drummer, creating the groove that defines a song's feel. Without the bass, a song can sound thin and lacking in balance.</p>
+
+      <h2>Evolution</h2>
+      <p>The modern electric bass guitar was popularized in the 1950s—most notably with the Fender Precision Bass—as an easier and louder alternative to the upright double bass. This innovation reshaped music forever, allowing bassists to play louder and more precisely in rock, jazz, and pop bands.</p>
+
+      <div class="content">
+        <div>
+          <h2>Master the Groove: Basic Techniques</h2>
+          <p><strong>Fingerstyle:</strong> The most common and versatile technique. It produces a warm, round tone using the index and middle fingers alternately.</p>
+          <p><strong>Pick/Plectrum:</strong> Using a pick gives a sharper attack and aggressive tone, often favored in rock and metal.</p>
+          <p><strong>Slap and Pop:</strong> A funk technique using the thumb to “slap” and the fingers to “pop,” creating a percussive, high-energy sound.</p>
+
+          <h2>Legends of the Low End</h2>
+          <p><strong>James Jamerson:</strong> The Motown legend who defined the soulful groove of the 1960s.</p>
+          <p><strong>Jaco Pastorius:</strong> Revolutionized the fretless bass, treating it as a melodic lead instrument.</p>
+          <p><strong>Geddy Lee:</strong> Known for technical skill and powerful lines in Rush.</p>
+          <p><strong>Flea:</strong> A modern icon whose energetic funk-rock style brought bass to the spotlight again.</p>
+        </div>
+
+        <img src="https://upload.wikimedia.org/wikipedia/commons/3/33/Fender_Precision_Bass_1960s.png" alt="Red Electric Bass Guitar">
+      </div>
+    </article>
+
+    <footer>
+      Whether you're holding down the low end or driving the whole song with a powerful bassline, the instrument is a rewarding choice. — Published by Enrique galgo
+    </footer>
+  </div>
+</body>
+</html>
