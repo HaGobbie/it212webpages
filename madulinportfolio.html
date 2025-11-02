@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shela Mae Madulin | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+</head>
+
+<style>
+body {
+  font-family: "Poppins", Arial, sans-serif;
+  background-image: url('roses-bg.jpg'); /* Replace with your roses image */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  position: relative;
+}
+
+/* Semi-transparent overlay for readability */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(139, 0, 0, 0.6);
+  z-index: -1;
+}
+
+/* Resume Container */
+.resume-container {
+  display: flex;
+  max-width: 1100px;
+  margin: 50px auto;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.4);
+}
+
+/* LEFT SIDE */
+.left-column {
+  background: #b22222;
+  color: #fff;
+  width: 35%;
+  padding: 30px;
+}
+
+.left-column h2 {
+  color: #fff;
+  border-bottom: 2px solid #fff;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+}
+
+.profile {
+  text-align: center;
+}
+
+.profile img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 3px solid #fff;
+  margin-bottom: 10px;
+  object-fit: cover;
+}
+
+.profile h1 {
+  font-size: 1.4em;
+  margin: 10px 0 0;
+  text-transform: uppercase;
+}
+
+.left-column ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.left-column ul li::before {
+  content: "• ";
+  color: #ffd1d1;
+}
+
+/* RIGHT SIDE */
+.right-column {
+  width: 65%;
+  padding: 40px;
+}
+
+.right-column h2 {
+  color: #b22222;
+  border-left: 5px solid #b22222;
+  padding-left: 10px;
+  margin-bottom: 15px;
+}
+
+.timeline {
+  border-left: 2px solid #b22222;
+  padding-left: 20px;
+  margin-left: 10px;
+}
+
+.timeline-item {
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.timeline-item::before {
+  content: "•";
+  color: #b22222;
+  position: absolute;
+  left: -12px;
+  top: 0;
+  font-size: 20px;
+}
+
+/* Icon spacing */
+i {
+  margin-right: 8px;
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+  .resume-container {
+    flex-direction: column;
+    width: 90%;
+  }
+
+  .left-column, .right-column {
+    width: 100%;
+  }
+}
+</style>
+
+<body>
+  <div class="overlay"></div>
+  <div class="resume-container">
+
+    <!-- LEFT COLUMN -->
+    <div class="left-column">
+      <div class="profile">
+        <img src="your-photo.jpg" alt="Profile Photo">
+        <h1>Shela Mae Madulin</h1>
+      </div>
+
+      <section class="contact">
+        <h2><i class="fa-solid fa-user"></i> Contact</h2>
+        <p><i class="fa-solid fa-envelope"></i> shelamaemadulin2@gmail.com</p>
+        <p><i class="fa-solid fa-phone"></i> 0981 635 4740</p>
+        <p><i class="fa-solid fa-location-dot"></i> Rosillo Compound Purok-1 Bago Oshiro,<br>Mintal, Davao City</p>
+      </section>
+
+      <section class="skills">
+        <h2><i class="fa-solid fa-gears"></i> Skills</h2>
+        <ul>
+          <li>Communication</li>
+          <li>Time Management</li>
+          <li>Adaptability</li>
+          <li>Problem Solving</li>
+        </ul>
+      </section>
+
+      <section class="languages">
+        <h2><i class="fa-solid fa-language"></i> Languages</h2>
+        <ul>
+          <li>English</li>
+          <li>Tagalog</li>
+          <li>Bisaya</li>
+        </ul>
+      </section>
+
+      <section class="reference">
+        <h2><i class="fa-solid fa-users"></i> Reference</h2>
+        <p><b>Elizabeth T. Madulin - Amara Inc.</b><br>"Admin Staff"<br>09101086549</p>
+      </section>
+
+      <section class="personal">
+        <h2><i class="fa-solid fa-id-card"></i> Personal Details</h2>
+        <p><b>Date of Birth:</b> 09-29-2005</p>
+        <p><b>Marital Status:</b> Single</p>
+        <p><b>Nationality:</b> Filipino</p>
+        <p><b>Religion:</b> Roman Catholic</p>
+        <p><b>Gender:</b> Female</p>
+      </section>
+    </div>
+
+    <!-- RIGHT COLUMN -->
+    <div class="right-column">
+      <section class="about-me">
+        <h2><i class="fa-solid fa-heart"></i> About Me</h2>
+        <p>
+          Hello! I’m <b>Shela Mae Madulin</b>, a dedicated and passionate student who values learning and growth. 
+          I enjoy exploring new knowledge, especially in the field of technology, and I’m always eager to improve myself 
+          both personally and professionally.
+        </p>
+      </section>
+
+      <section class="objective">
+        <h2><i class="fa-solid fa-bullseye"></i> Why I Chose BSIT</h2>
+        <p>
+          I chose the <b>Bachelor of Science in Information Technology (BSIT)</b> program because I’ve always been curious 
+          about how technology shapes our world. I want to develop skills in programming, web development, and system design 
+          to build innovative solutions that can make life easier for others. BSIT helps me grow as a creative problem solver 
+          and prepares me for a tech-driven future.
+        </p>
+      </section>
+
+      <section class="experience">
+        <h2><i class="fa-solid fa-briefcase"></i> Experience</h2>
+        <div class="timeline">
+          <div class="timeline-item">
+            <h3>CM Interiors Marketing</h3>
+            <p><b>Office Staff</b></p>
+            <p>Performed administrative and clerical tasks to support the smooth functioning of an office.</p>
+          </div>
+          <div class="timeline-item">
+            <h3>Kialas Kitchen</h3>
+            <p><b>Service Crew</b></p>
+            <p>Provided excellent customer service in a fast-paced food environment.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="education">
+        <h2><i class="fa-solid fa-graduation-cap"></i> Education</h2>
+        <div class="timeline">
+          <div class="timeline-item">
+            <h3>Katipunan Elementary School</h3>
+            <p><em>2015-2016</em></p>
+          </div>
+          <div class="timeline-item">
+            <h3>Corazon C. Aquino National High School</h3>
+            <p><em>2022-2023</em> | GAS</p>
+          </div>
+          <div class="timeline-item">
+            <h3>Davao Vision Colleges</h3>
+            <p><em>2026-2027</em> | BSIT</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="hobbies">
+        <h2><i class="fa-solid fa-music"></i> Hobbies & Interests</h2>
+        <p>
+          I enjoy <b>listening to music, watching movies, and playing sports</b> like basketball and volleyball. 
+          I also love spending time with family, exploring new technologies, and designing creative projects online.
+        </p>
+      </section>
+    </div>
+  </div>
+</body>
+</html>
