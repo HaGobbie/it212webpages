@@ -1,0 +1,250 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Parts of a Computer — Uses & Guide</title>
+  <style>
+    :root{
+      --bg:#f6f8fb;
+      --card:#ffffff;
+      --accent:#0a66c2;
+      --muted:#555;
+      --radius:12px;
+      --pad:18px;
+    }
+    body{
+      margin:0;
+      font-family: "Inter", Roboto, Arial, sans-serif;
+      background:var(--bg);
+      color:#222;
+      line-height:1.5;
+    }
+    header{
+      background:linear-gradient(90deg, rgba(10,102,194,0.08), rgba(10,102,194,0.02));
+      padding:28px var(--pad);
+      border-bottom:1px solid rgba(10,102,194,0.06);
+    }
+    .container{
+      max-width:1000px;
+      margin:26px auto;
+      padding:0 var(--pad);
+    }
+    h1{margin:0 0 6px;font-size:26px;}
+    p.lead{margin:0;color:var(--muted);}
+    .hero{
+      display:grid;
+      grid-template-columns: 1fr;
+      gap:16px;
+      margin-top:18px;
+    }
+    .photo{
+      background:var(--card);
+      border-radius:var(--radius);
+      overflow:hidden;
+      box-shadow: 0 6px 20px rgba(20,30,50,0.06);
+    }
+    .photo img{display:block;width:100%;height:auto;}
+    .grid{
+      display:grid;
+      grid-template-columns: 1fr;
+      gap:14px;
+      margin-top:14px;
+    }
+    .card{
+      background:var(--card);
+      padding:14px;
+      border-radius:10px;
+      box-shadow: 0 4px 14px rgba(12,20,40,0.04);
+    }
+    .part{
+      display:flex;
+      gap:14px;
+      align-items:flex-start;
+      padding:10px 0;
+      border-bottom:1px dashed #eee;
+    }
+    .part:last-child{border-bottom:none;}
+    .badge{
+      min-width:110px;
+      font-weight:600;
+      color:var(--accent);
+    }
+    .desc{color:var(--muted);}
+    .toc{
+      display:flex;
+      flex-wrap:wrap;
+      gap:8px;
+      margin-top:8px;
+    }
+    .toc a{
+      background:#fff;
+      border:1px solid #e6eefc;
+      padding:6px 10px;
+      border-radius:8px;
+      color:var(--accent);
+      text-decoration:none;
+      font-size:13px;
+    }
+    footer{
+      margin:26px 0 60px;
+      text-align:center;
+      color:#777;
+      font-size:14px;
+    }
+
+    @media(min-width:760px){
+      .hero{grid-template-columns: 1fr 380px; align-items:start;}
+      .grid{grid-template-columns: 1fr;}
+      .photo img{height:420px; object-fit:cover;}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Parts of a Computer — What They Do</h1>
+      <p class="lead">A quick, friendly guide to the main computer parts shown in the photo and their common uses.</p>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div class="photo card">
+        <!-- Updated image link -->
+        <img src="https://uploads.onecompiler.io/442ue6mpy/443hcek2r/1000037611.jpg" alt="Parts of a computer diagram">
+      </div>
+
+      <aside class="card">
+        <strong>Quick navigation</strong>
+        <div class="toc">
+          <a href="#cpu">CPU</a>
+          <a href="#cpu-cooler">CPU Cooler</a>
+          <a href="#motherboard">Motherboard</a>
+          <a href="#ram">RAM</a>
+          <a href="#ssd">SSD</a>
+          <a href="#hdd">HDD</a>
+          <a href="#psu">PSU</a>
+          <a href="#case">Computer Case</a>
+          <a href="#expansion">Expansion Cards</a>
+          <a href="#monitor">Monitor</a>
+          <a href="#keyboard">Keyboard</a>
+          <a href="#mouse">Mouse</a>
+          <a href="#speakers">Speakers</a>
+        </div>
+      </aside>
+    </section>
+
+    <section class="grid" style="margin-top:18px;">
+      <div class="card part" id="cpu">
+        <div class="badge">CPU (Processor)</div>
+        <div>
+          <div style="font-weight:700">Central Processing Unit</div>
+          <div class="desc">Acts as the brain of the computer. It performs calculations, processes data, and runs instructions that allow all programs to function.</div>
+        </div>
+      </div>
+
+      <div class="card part" id="cpu-cooler">
+        <div class="badge">CPU Cooler</div>
+        <div>
+          <div style="font-weight:700">Cooling System</div>
+          <div class="desc">Keeps the processor cool by dissipating heat. Prevents overheating and ensures stable performance.</div>
+        </div>
+      </div>
+
+      <div class="card part" id="motherboard">
+        <div class="badge">Motherboard</div>
+        <div>
+          <div style="font-weight:700">Main Circuit Board</div>
+          <div class="desc">Connects all hardware components together and allows them to communicate — including the CPU, RAM, storage, and peripherals.</div>
+        </div>
+      </div>
+
+      <div class="card part" id="ram">
+        <div class="badge">RAM</div>
+        <div>
+          <div style="font-weight:700">Random Access Memory</div>
+          <div class="desc">Provides temporary memory for running applications. The more RAM, the more tasks your computer can handle at once.</div>
+        </div>
+      </div>
+
+      <div class="card part" id="ssd">
+        <div class="badge">SSD</div>
+        <div>
+          <div style="font-weight:700">Solid State Drive</div>
+          <div class="desc">A fast storage device that greatly improves boot time and program loading speed compared to older hard drives.</div>
+        </div>
+      </div>
+
+      <div class="card part" id="hdd">
+        <div class="badge">HDD</div>
+        <div>
+          <div style="font-weight:700">Hard Disk Drive</div>
+          <div class="desc">Traditional storage device used to store large files like photos, videos, and documents at a lower cost per gigabyte.</div>
+        </div>
+      </div>
+
+      <div class="card part" id="psu">
+        <div class="badge">PSU</div>
+        <div>
+          <div style="font-weight:700">Power Supply Unit</div>
+          <div class="desc">Supplies power to all computer parts. Converts electricity from the wall outlet into usable power for the motherboard and components.</div>
+        </div>
+      </div>
+
+      <div class="card part" id="case">
+        <div class="badge">Computer Case</div>
+        <div>
+          <div style="font-weight:700">System Enclosure</div>
+          <div class="desc">Houses and protects all computer components. It also provides airflow to keep them cool.</div>
+        </div>
+      </div>
+
+      <div class="card part" id="expansion">
+        <div class="badge">Expansion Cards</div>
+        <div>
+          <div style="font-weight:700">Add-on Components</div>
+          <div class="desc">Used to add extra functions like better graphics (GPU), sound, or network capabilities.</div>
+        </div>
+      </div>
+
+      <div class="card part" id="monitor">
+        <div class="badge">Monitor</div>
+        <div>
+          <div style="font-weight:700">Display Screen</div>
+          <div class="desc">Shows what the computer is doing. Displays images, text, and videos — an essential part of user interaction.</div>
+        </div>
+      </div>
+
+      <div class="card part" id="keyboard">
+        <div class="badge">Keyboard</div>
+        <div>
+          <div style="font-weight:700">Input Device</div>
+          <div class="desc">Allows you to type letters, numbers, and commands to control the computer.</div>
+        </div>
+      </div>
+
+      <div class="card part" id="mouse">
+        <div class="badge">Mouse</div>
+        <div>
+          <div style="font-weight:700">Pointing Device</div>
+          <div class="desc">Used to move the pointer, click, and interact with elements on the screen.</div>
+        </div>
+      </div>
+
+      <div class="card part" id="speakers">
+        <div class="badge">Speakers</div>
+        <div>
+          <div style="font-weight:700">Audio Output</div>
+          <div class="desc">Produce sound from the computer — for music, videos, or system alerts.</div>
+        </div>
+      </div>
+
+    </section>
+
+    <footer>
+      <div>Created with ❤️ — Parts of a Computer Blog</div>
+    </footer>
+  </main>
+</body>
+</html>
