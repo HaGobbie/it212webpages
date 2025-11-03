@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mhiewin Grace Puya Portfolio</title>
+  <style>
+    /* Reset and base styles */
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f7d3b0;
+      color: #4a2e17;
+      line-height: 1.5;
+    }
+    a {
+      color: #a3560e;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+
+    /* Navigation */
+    nav {
+      display: flex;
+      justify-content: flex-end;
+      gap: 20px;
+      padding: 1rem 2rem;
+      font-weight: 700;
+      color: #4a2e17;
+      user-select: none;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      background-color: transparent;
+      font-size: 0.9rem;
+    }
+    nav a {
+      color: #4a2e17;
+    }
+
+    /* Header */
+
+    header {
+      background-color: #f1c8a5;
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+      padding: 3rem 2rem 4rem;
+      flex-wrap: wrap;
+      justify-content: center;
+      text-align: left;
+      color: #3f2306;
+      position: relative;
+    }
+    header img {
+      width: 160px;
+      height: 160px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid #a3560e;
+      flex-shrink: 0;
+    }
+    header .intro-text {
+      max-width: 540px;
+      font-weight: 500;
+    }
+    header .intro-text h1 {
+      margin: 0 0 0.5rem 0;
+      font-weight: 400;
+      font-size: 2.4rem;
+      line-height: 1.1;
+    }
+    header .intro-text h1 br {
+      display: none;
+    }
+    @media (max-width: 480px) {
+      header .intro-text h1 br {
+        display: initial;
+      }
+    }
+    header .intro-text .quote {
+      font-weight: 700;
+      font-size: 0.85rem;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      max-width: 400px;
+      user-select: none;
+      margin-top: 0.75rem;
+    }
+    /* Scroll Down icon */
+    header .scroll-down {
+      position: absolute;
+      bottom: 8px;
+      right: 2rem;
+      font-size: 2rem;
+      color: #a3560e;
+      user-select: none;
+      cursor: pointer;
+      animation: bounce 2s infinite;
+    }
+    @keyframes bounce {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(8px); }
+    }
+
+    /* Section Titles */
+    h2.section-title {
+      text-align: center;
+      text-transform: uppercase;
+      font-weight: 700;
+      font-size: 1.2rem;
+      color: #c46217;
+      margin-top: 3rem;
+      margin-bottom: 1.5rem;
+      letter-spacing: 0.12em;
+    }
+
+    /* About Section */
+    #about {
+      max-width: 900px;
+      margin: auto;
+      padding: 0 1rem 3rem;
+      color: #4a2e17;
+      text-align: center;
+    }
+    #about .images-row {
+      display: flex;
+      justify-content: center;
+      gap: 3rem;
+      flex-wrap: wrap;
+      margin-bottom: 1.8rem;
+    }
+    #about .about-item {
+      max-width: 320px;
+      text-align: center;
+    }
+    #about .about-item img {
+      width: 100%;
+      height: 230px;
+      object-fit: cover;
+      border-radius: 8px;
+      box-shadow: 0 1px 5px rgba(0,0,0,0.1);
+      user-select: none;
+    }
+    #about .about-item p {
+      text-transform: lowercase;
+      font-weight: 600;
+      margin-top: 0.6rem;
+      user-select: none;
+      font-size: 1rem;
+    }
+    #about .about-text {
+      font-size: 0.9rem;
+      font-weight: 500;
+      line-height: 1.5;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+      max-width: 840px;
+      margin: auto;
+      color: #4a2e17;
+      user-select: text;
+      white-space: pre-line;
+    }
+
+    /* Skills Section */
+    #skills {
+      background-color: #f1c8a5;
+      padding: 2rem 1rem 3rem;
+      max-width: 900px;
+      margin: auto;
+      text-align: center;
+    }
+    #skills h3 {
+      margin-bottom: 0.3rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      font-size: 1.1rem;
+      color: #c46217;
+      letter-spacing: 0.1em;
+    }
+    #skills p.subtitle {
+      margin-bottom: 2rem;
+      font-weight: 600;
+      font-size: 0.95rem;
+      color: #5a3a13;
+      user-select: none;
+    }
+    .skills-list {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 2.5rem 4rem;
+      font-weight: 700;
+      font-size: 0.9rem;
+      color: #4a2e17;
+      text-transform: uppercase;
+      user-select: none;
+      letter-spacing: 0.08em;
+    }
+    .skills-list span {
+      min-width: 140px;
+    }
+
+    /* Portfolio Section */
+    #portfolio {
+      max-width: 960px;
+      margin: auto;
+      padding: 2rem 1rem 3rem;
+      color: #4a2e17;
+      text-align: center;
+    }
+    #portfolio p.subtitle {
+      margin-bottom: 1rem;
+      font-weight: 600;
+      user-select: none;
+      font-size: 1.05rem;
+      color: #4a2e17;
+    }
+
+    #portfolio .portfolio-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit,minmax(160px,1fr));
+      gap: 1rem;
+    }
+    #portfolio .portfolio-grid img {
+      width: 100%;
+      height: 140px;
+      object-fit: cover;
+      border-radius: 6px;
+      cursor: default;
+      user-select: none;
+      box-shadow: 0 1px 6px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+    #portfolio .portfolio-grid img:hover {
+      transform: scale(1.05);
+    }
+
+    /* Contact Section */
+    #contact {
+      background-color: #4a2e17;
+      color: #f1c8a5;
+      padding: 2.5rem 1rem 3.5rem;
+      font-weight: 500;
+      max-width: 960px;
+      margin: auto;
+      text-align: left;
+    }
+
+    #contact h4 {
+      font-weight: 600;
+      font-size: 1.2rem;
+      margin-bottom: 1.8rem;
+      text-align: center;
+      user-select: none;
+      text-transform: none;
+      letter-spacing: 0;
+    }
+
+    #contact .contact-list {
+      list-style: none;
+      padding: 0;
+      margin: 0 auto;
+      max-width: 300px;
+    }
+
+    #contact .contact-list li {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 1.4rem;
+      font-size: 0.95rem;
+      user-select: text;
+    }
+
+    /* Icons in contact */
+    #contact svg {
+      fill: #f1c8a5;
+      width: 22px;
+      height: 22px;
+      flex-shrink: 0;
+    }
+
+    /* Responsive */
+    @media (max-width: 700px) {
+      header {
+        justify-content: center;
+        text-align: center;
+        gap: 1rem;
+      }
+      header .intro-text {
+        max-width: 90vw;
+      }
+      #about .images-row {
+        flex-direction: column;
+        gap: 1.5rem;
+      }
+      .skills-list {
+        gap: 1.5rem 2rem;
+        font-size: 0.85rem;
+      }
+      #portfolio .portfolio-grid {
+        grid-template-columns: repeat(auto-fit,minmax(140px,1fr));
+      }
+      #portfolio .portfolio-grid img {
+        height: 110px;
+      }
+      #contact {
+        text-align: center;
+      }
+      #contact .contact-list {
+        max-width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<nav aria-label="Primary navigation">
+  <a href="#home">Home</a>
+  <a href="#about">About</a>
+  <a href="#skills">Skills</a>
+  <a href="#portfolio">Portfolio</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<header id="home" tabindex="0">
+  <img src="c:\Users\Admin\Downloads\3398816d-d3f3-489b-8959-acf6df9bf02a.jfif" alt="Portrait of Mhiewin Grace Puya" />
+  <div class="intro-text">
+    <h1>Hi, I’m<br />Mhiewin Grace Puya</h1>
+    <p class="quote">"THE MOST AGILE PROFESSIONALS ARE THOSE WHO CAN LEARN, UNLEARN, AND RELEARN"</p>
+  </div>
+  <div class="scroll-down" aria-hidden="true">⌄</div>
+</header>
+
+<section id="about" tabindex="0" aria-labelledby="about-title">
+  <h2 id="about-title" class="section-title">About Me</h2>
+  <div class="images-row">
+    <div class="about-item">
+      <img src="c:\Users\Admin\Downloads\b4d728d5-52c0-4568-9c0d-0ea1aa86a3b3.jfif" alt="Mhiewin Grace Puya working student" />
+      <p>working student</p>
+    </div>
+    <div class="about-item">
+      <img src="c:\Users\Admin\Downloads\b8c8049d-ccda-4f4c-958f-a20a94f814c9 (1).jfif" alt="Mhiewin Grace Puya student" />
+      <p>Student</p>
+    </div>
+  </div>
+  <p class="about-text">
+HI, I'M MHIEWIN GRACE PUYA A PASSIONATE AND HARDWORKING PERSON WHO DREAMS OF MAKING A DIFFERENCE IN PEOPLE’S LIVES.
+I’M INSPIRED BY THE IDEA OF HELPING OTHERS, ESPECIALLY IN THE FIELD OF HEALTHCARE. AS I CONTINUE TO GROW AND LEARN, I AIM TO BECOME SOMEONE WHO BRINGS CARE, HOPE, AND POSITIVITY TO EVERYONE I MEET. I BELIEVE THAT WITH KINDNESS, DETERMINATION, AND FAITH IN MYSELF, I CAN ACHIEVE MY GOALS AND INSPIRE OTHERS TO DO THE SAME.
+  </p>
+</section>
+
+<section id="skills" tabindex="0" aria-labelledby="skills-title">
+  <h3 id="skills-title">What I Can Do</h3>
+  <p class="subtitle">My Skills</p>
+  <div class="skills-list" role="list">
+    <span role="listitem">HTML, CSS, JAVA SCRIPT</span>
+    <span role="listitem">NETWORKING</span>
+    <span role="listitem">PYTHON &amp; C PROGRAMMING</span>
+    <span role="listitem">COMPUTER LITERACY</span>
+  </div>
+</section>
+
+<section id="portfolio" tabindex="0" aria-labelledby="portfolio-title">
+  <h3 id="portfolio-title" class="section-title">What I've Done So Far</h3>
+  <p class="subtitle">Portfolio</p>
+  <div class="portfolio-grid">
+    <img src="c:\Users\Admin\Downloads\d540dad1-d349-4a05-a8d9-ea06b0bcd158.jfif" alt="Portfolio image 1" />
+    <img src="c:\Users\Admin\Downloads\123f8866-063e-4176-961e-1d217b3fe9a3.jfif" alt="Portfolio image 2" />
+    <img src="c:\Users\Admin\Downloads\69ffc9c5-ae31-4f8e-99b9-535e1d41e5eb.jfif" alt="Portfolio image 3" />
+    <img src="c:\Users\Admin\Downloads\1410eb10-6613-423a-be89-9311352ee762.jfif" alt="Portfolio image 4" />
+    <img src="c:\Users\Admin\Downloads\eb586b36-ef68-4b49-ba08-7f43b674132d (1).jfif" alt="Portfolio image 5" />
+    <img src="c:\Users\Admin\Downloads\ddd36697-ed0e-4427-ac6c-c789c8af9a16.jfif" alt="Portfolio image 6" />
+    <img src="c:\Users\Admin\Downloads\0aa7131d-c7ca-43cc-afd9-269eed0b385e.jfif" alt="Portfolio image 7" />
+    <img src="c:\Users\Admin\Downloads\3d1e0d30-3163-4125-97b5-f76462b1f85a.jfif" alt="Portfolio image 8" />
+    <img src="c:\Users\Admin\Downloads\dc0c9158-9d2a-40e3-9402-36f108b94bd9.jfif" alt="Portfolio image 9" />
+    <img src="c:\Users\Admin\Downloads\1921a274-5a3e-4849-9eaf-8b6d19e0eb9b.jfif" alt="Portfolio image 10" />
+  </div>
+</section>
+
+<section id="contact" tabindex="0" aria-labelledby="contact-title">
+  <h4 id="contact-title">Reach out!</h4>
+  <ul class="contact-list" role="list">
+    <li role="listitem">
+      <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24"><path d="M12 2.163c-5.455 0-9.837 4.383-9.837 9.836 0 5.454 4.382 9.837 9.837 9.837 5.454 0 9.836-4.383 9.836-9.837 0-5.453-4.382-9.836-9.836-9.836zM12 19.978c-4.421 0-8.018-3.595-8.018-8.018 0-4.423 3.597-8.018 8.018-8.018 4.424 0 8.019 3.595 8.019 8.018 0 4.423-3.595 8.018-8.019 8.018z"/><path d="M16.59 7.45a.822.822 0 0 1 -.87.19 5.695 5.695 0 0 0-1.013-.41 2.32 2.32 0 0 0-1.616.241c-.455.3-.62.744-.62.848 0 .104.12.229.234.36a3 3 0 0 0 .632 1.578.301.301 0 0 1 .1.217.201.201 0 0 1-.104.103 4.74 4.74 0 0 1-1.031.211c-. laconic description from source." /></svg>
+      <a href="https://www.instagram.com/grace_puya" target="_blank" rel="noopener noreferrer">@grace_puya</a>
+    </li>
+    <li role="listitem">
+      <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24"><path d="M22.675 0H1.325A1.326 1.326 0 0 0 0 1.325v21.35A1.325 1.325 0 0 0 1.325 24h11.498v-9.294H9.691V11.16h3.132V8.412c0-3.1 1.894-4.788 4.659-4.788 1.325 0 2.463.1 2.795.143v3.24l-1.918.001c-1.504 0-1.796.715-1.796 1.764v2.312h3.588l-.467 3.546h-3.12V24h6.117A1.326 1.326 0 0 0 24 22.675V1.325A1.326 1.326 0 0 0 22.675 0z"/></svg>
+      <a href="https://www.facebook.com/mhiewin.grace.puya.2025" target="_blank" rel="noopener noreferrer">mhiewin.grace.puya.2025</a>
+    </li>
+    <li role="listitem">
+      <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24"><path d="M12 12.713l11.985-9.713H.015l11.985 9.713zm0 2.574L.015 6.99v12.04h23.971V6.993l-12 .002z"/></svg>
+      <a href="mailto:puyamhiewin@gmail.com">puyamhiewin@gmail.com</a>
+    </li>
+    <li role="listitem">
+      <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="#f1c8a5" width="24" height="24" xmlns="http://www.w3.org/2000/svg"><path d="M6.62 10.79a15.91 15.91 0 0 0 6.59 6.59l2.21-2.22a1 1 0 0 1 1.11-.13c1.22.49 2.54.74 3.86.74a1 1 0 0 1 1 1v3.34a1 1 0 0 1-1 1A17.94 17.94 0 0 1 2 4a1 1 0 0 1 1-1h3.33a1 1 0 0 1 1 1c0 1.33.25 2.65.74 3.87a1 1 0 0 1-.13 1.11z"/></svg>
+      <span>0908-243-9103</span>
+    </li>
+  </ul>
+</section>
+
+</body>
+</html>
